@@ -1,0 +1,21 @@
+# Python byte-code / caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE configurations
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Log files
+logs/chatbot.log
+
+# Environment files
+.env
+
+# Virtual environments
+venv/
+.venv/
