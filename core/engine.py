@@ -293,6 +293,18 @@ def run_chatbot_loop() -> None:
     Coordinates the primary interaction loop. Runs continuously until 
     an exit signal/command is detected or Ctrl+C / EOF is received.
     """
+    # Force UTF-8 encoding for standard streams to prevent UnicodeEncodeError on Windows CP1252 consoles
+    if hasattr(sys.stdout, "reconfigure"):
+        try:
+            sys.stdout.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
+    if hasattr(sys.stderr, "reconfigure"):
+        try:
+            sys.stderr.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
+
     # Configure logs
     setup_logger()
     logger.info("Session started.")
