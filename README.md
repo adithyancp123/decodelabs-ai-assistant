@@ -31,6 +31,22 @@ The system acts as an interactive command-line assistant supporting 28 intent ca
 
 ---
 
+# 📸 Screenshots
+
+### Startup
+![Startup](assets/screenshots/startup.png)
+
+### Conversation
+![Conversation](assets/screenshots/conversation.png)
+
+### Debug Mode
+![Debug Mode](assets/screenshots/debug.png)
+
+### Session Statistics
+![Session Statistics](assets/screenshots/stats.png)
+
+---
+
 ## ╔════════════════════════════════════════════════════════════╗
 ## ║ 📂 Project Directory Structure                         ║
 ## ╚════════════════════════════════════════════════════════════╝
