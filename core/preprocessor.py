@@ -1,9 +1,10 @@
 """
-Input preprocessing module for the Rule-Based AI Chatbot.
+Input preprocessing module for the DecodeLabs AI Assistant.
 Handles raw string sanitization (lowercase, strip) and tokenization.
 """
 
 import string
+from typing import List
 
 def sanitize_input(raw_input: str) -> str:
     """
@@ -20,7 +21,7 @@ def sanitize_input(raw_input: str) -> str:
         return ""
     return raw_input.strip().lower()
 
-def tokenize_input(cleaned_input: str) -> list:
+def tokenize_input(cleaned_input: str) -> List[str]:
     """
     Splits the cleaned input into a list of word tokens.
     Removes standard punctuation characters.
@@ -29,7 +30,7 @@ def tokenize_input(cleaned_input: str) -> list:
         cleaned_input (str): The sanitized, lowercase string.
 
     Returns:
-        list[str]: Tokenized words.
+        List[str]: Tokenized words.
     """
     if not cleaned_input:
         return []
